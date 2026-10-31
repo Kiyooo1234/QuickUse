@@ -1,0 +1,24 @@
+{
+	"schemaVersion": 1,
+	"id": "quickuse",
+	"version": "${version}",
+	"name": "Quick Use",
+	"description": "Shortens (but never removes) the right-click repeat delay for bow, ender pearl, wind charge and shield.",
+	"authors": ["Jan Rhey Cantillas"],
+	"license": "MIT",
+	"environment": "client",
+	"entrypoints": {
+		"client": ["dev.janrhey.quickuse.QuickUseClient"],
+		"modmenu": ["dev.janrhey.quickuse.ModMenuIntegration"]
+	},
+	"suggests": {
+		"modmenu": "*"
+	},
+	"mixins": ["quickuse.mixins.json"],
+	"depends": {
+		"fabricloader": ">=0.18.0",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
